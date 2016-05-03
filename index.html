@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="GBK" />
+<title>H5</title>
+<meta name="keywords" content="H5"
+<meta name="description" content="H5" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1" />
+<meta name="format-detection" content="telephone=no" />
+<script type="text/javascript">
+//适配
+(function(doc,win){var docEl = doc.documentElement,resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',pW = 640,recalc = function(){var cW = docEl.clientWidth<768?docEl.clientWidth:768;if (!cW){return;}docEl.style.fontSize = 20*(cW / pW) + 'px';};recalc();win.addEventListener(resizeEvt, recalc, false);})(document,window);
+</script>
+
+<link rel="stylesheet" href="css/public.css" />
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>
+<script type="text/javascript" src="js/common_h5.js"></script>
+
+<script type="text/javascript">
+var rootUrl = 'http://localhost/vue/';
+
+f.jsonp(rootUrl+'api.php',{type:'nav'},'callback',function(data){
+	alert(123456);
+	console.log(data);
+});
+</script>
